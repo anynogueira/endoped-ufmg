@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#2563eb">
+    <meta name="theme-color" content="#fcfbfa">
     <title>Endoped UFMG - Pastas Obturadoras</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
@@ -12,78 +12,121 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Logos -->
-    <header class="top-logos">
-        <img src="placeholder-top.png" alt="FAO UFMG" class="logo-top" style="display: none;">
-        <!-- If images are not available, use text for now -->
-        <div class="logo-text">FAO <strong>UF<em>m</em>G</strong><br><small>FACULDADE DE ODONTOLOGIA</small></div>
-    </header>
-
     <main class="app-main" id="app-container">
+        
         <!-- Start Screen -->
         <div id="start-screen" class="screen active">
-            <div class="info-card">
-                <p>O objetivo desse aplicativo é auxiliar na escolha do material obturador para tratamento endodôntico de <br><strong>DENTES DECÍDUOS</strong></p>
+            <header class="top-logos">
+                <div class="logo-text">FAO <strong>UF<em>m</em>G</strong><br><small>FACULDADE DE ODONTOLOGIA</small></div>
+            </header>
+            
+            <div class="elegant-card-container">
+                <div class="info-card-elegant">
+                    <p>O objetivo desse aplicativo<br>é auxiliar na escolha do<br>material obturador para<br>tratamento endodôntico de<br><span class="highlight-text">DENTES DECÍDUOS</span></p>
+                </div>
             </div>
-            <button id="btn-start" class="btn btn-capsule btn-start-spacing">INICIAR</button>
+            
+            <div class="start-action mt-auto">
+                <button id="btn-to-instructions" class="btn btn-pill">Instruções</button>
+            </div>
+            
+            <footer class="bottom-logos">
+                <div class="logo-col">
+                    <div class="tooth-art">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="#d5b967" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" class="elegant-icon"><path d="M12 21c-2-2-4-4.5-5-8A5 5 0 0 1 12 3a5 5 0 0 1 5 10c-1 3.5-3 6-5 8z"></path><path d="M10 11v6"></path><path d="M14 11v6"></path><path d="M12 3v18"></path></svg>
+                    </div>
+                    <div class="text-brand">Endo<span>Ped</span><br><small>UFMG</small></div>
+                </div>
+                <div class="logo-col">
+                    <div class="flower-art">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="#dfc268" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="elegant-icon"><path d="M12 22V12"></path><path d="M12 12A5 5 0 1 0 7 7a5 5 0 1 0 10 0 5 5 0 1 0-5 5z"></path></svg>
+                    </div>
+                    <div class="text-brand odontoped-font">Odontopediatria<br><small>UFMG</small></div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Instructions Screen -->
+        <div id="instructions-screen" class="screen">
+            <header class="screen-header clickable-header">
+                <div class="logo-text small-logo">FAO <strong>UF<em>m</em>G</strong></div>
+            </header>
+            
+            <div class="elegant-card-container">
+                <div class="info-card-elegant">
+                    <h2 class="question-title accent-title" style="margin-bottom: 1.5rem; text-transform: uppercase;">Atenção</h2>
+                    <p style="font-size: 0.95rem; color: #666; text-align: left;">Siga o fluxograma respondendo às perguntas de acordo com a avaliação clínica e radiográfica do paciente.</p>
+                </div>
+            </div>
+            
+            <div class="start-action mt-auto">
+                <button id="btn-start" class="btn btn-pill">Iniciar</button>
+            </div>
+            
+            <footer class="screen-footer">
+                <div class="text-brand odontoped-font justify-center">Odontopediatria<br><small>UFMG</small></div>
+            </footer>
         </div>
 
         <!-- Question Screen -->
         <div id="question-screen" class="screen">
-            <button id="btn-back" class="btn-icon" aria-label="Voltar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-            </button>
-            <div class="question-container">
-                <h2 id="question-text" class="question-text">TIPO DE DENTE</h2>
-                <div id="options-container" class="options-container">
-                    <!-- Options will be injected here -->
+            <header class="screen-header clickable-header">
+                <div class="logo-text small-logo">FAO <strong>UF<em>m</em>G</strong></div>
+            </header>
+
+            <div class="btn-icon-wrapper">
+                <button id="btn-back" class="btn-icon btn-back-styled" aria-label="Voltar" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg> Voltar
+                </button>
+            </div>
+
+            <div class="content-container">
+                <h2 id="question-text" class="question-title">TIPO DE DENTE</h2>
+                <div id="options-container" class="options-wrapper">
+                    <!-- Options injected here -->
                 </div>
             </div>
+
+            <footer class="screen-footer">
+                <div class="text-brand odontoped-font justify-center">Odontopediatria<br><small>UFMG</small></div>
+            </footer>
         </div>
 
         <!-- Result Screen -->
         <div id="result-screen" class="screen">
-            <div class="header-result">
-                <h2 class="question-text">RECOMENDAÇÃO</h2>
+            <header class="screen-header clickable-header">
+                <div class="logo-text small-logo">FAO <strong>UF<em>m</em>G</strong></div>
+            </header>
+
+            <div class="content-container text-center">
+                <h2 class="question-title accent-title">RECOMENDAÇÃO</h2>
+                <div id="result-content" class="result-card">
+                    <!-- Result injected here -->
+                </div>
+                <div class="start-action mt-large">
+                    <button id="btn-restart" class="btn btn-pill">Recomeçar</button>
+                </div>
             </div>
-            <div id="result-content" class="result-content">
-                <!-- Result will be injected here -->
-            </div>
-            <button id="btn-restart" class="btn btn-capsule btn-restart-spacing">Recomeçar</button>
+            
+            <footer class="screen-footer">
+                <div class="text-brand odontoped-font justify-center">Odontopediatria<br><small>UFMG</small></div>
+            </footer>
         </div>
         
-        <!-- Loading Indicator -->
+        <!-- Loading -->
         <div id="loading" class="loading-overlay hidden">
             <div class="spinner"></div>
         </div>
     </main>
 
-    <!-- Bottom Logos -->
-    <footer class="bottom-logos">
-        <div class="logo-left">
-            <img src="placeholder-endoped.png" alt="EndoPed UFMG" class="logo-bottom" style="display: none;">
-            <div class="logo-text-small">EndoPed<br><small>UFMG</small></div>
-        </div>
-        <div class="logo-right">
-            <img src="placeholder-odonto.png" alt="Odontopediatria UFMG" class="logo-bottom" style="display: none;">
-            <div class="logo-text-small">Odontopediatria<br><small>UFMG</small></div>
-        </div>
-    </footer>
-
     <script src="app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('SW registered: ', registration);
-                    })
-                    .catch(registrationError => {
-                        console.log('SW registration failed: ', registrationError);
-                    });
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
             });
         }
     </script>

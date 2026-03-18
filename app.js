@@ -6,18 +6,21 @@ let nodeHistory = [];
 // DOM Elements
 const screens = {
     start: document.getElementById('start-screen'),
+    instructions: document.getElementById('instructions-screen'),
     question: document.getElementById('question-screen'),
     result: document.getElementById('result-screen')
 };
 
 const elements = {
     loading: document.getElementById('loading'),
+    btnToInstructions: document.getElementById('btn-to-instructions'),
     btnStart: document.getElementById('btn-start'),
     btnBack: document.getElementById('btn-back'),
     btnRestart: document.getElementById('btn-restart'),
     questionText: document.getElementById('question-text'),
     optionsContainer: document.getElementById('options-container'),
-    resultContent: document.getElementById('result-content')
+    resultContent: document.getElementById('result-content'),
+    clickableHeaders: document.querySelectorAll('.clickable-header')
 };
 
 // Initialization
@@ -31,18 +34,15 @@ async function initApp() {
         flowData = await response.json();
         
         // Setup event listeners
-        elements.btnStart.addEventListener('click', startFlow);
-        elements.btnBack.addEventListener('click', goBack);
-        elements.btnRestart.addEventListener('click', resetFlow);
+        if (elements.btnToInstructions) elements.btnToInstructions.addEventListener('click', showInstructions);
+        if (elements.btnStart) elements.btnStart.addEventListener('click', startFlow);
+        if (elements.btnBack) elements.btnBack.addEventListener('click', goBack);
+        if (elements.btnRestart) elements.btnRestart.addEventListener('click', resetFlow);
         
-        // Header click to restart
-        const header = document.getElementById('app-header');
-        if (header) {
-            header.style.cursor = 'pointer';
-            header.addEventListener('click', () => {
-                if (!screens.start.classList.contains('active')) {
-                    resetFlow();
-                }
+        // Home buttons (Headers)
+        if (elements.clickableHeaders) {
+            elements.clickableHeaders.forEach(header => {
+                header.addEventListener('click', resetFlow);
             });
         }
         
@@ -71,6 +71,10 @@ function showLoading(show) {
 }
 
 // Flow Logic
+function showInstructions() {
+    showScreen('instructions');
+}
+
 function startFlow() {
     nodeHistory = [];
     renderNode(flowData);
