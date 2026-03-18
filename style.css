@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+:root {
+    --bg-color: #f3f1eb;
+    --text-dark: #4e4e4e;
+    --text-yellow: #f4c443;
+    --btn-bg: #ead075;
+    
+    --radius-capsule: 50px;
+    --radius-card: 24px;
+    --transition: all 0.2s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Logos Top */
+.top-logos {
+    width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.logo-text em {
+    color: #cc0000;
+    font-style: italic;
+    font-family: serif;
+}
+
+.logo-text small {
+    font-size: 0.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 2px;
+}
+
+/* Main Container */
+.app-main {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Screens */
+.screen {
+    display: none;
+    animation: fadeIn 0.3s ease-out;
+    width: 100%;
+}
+
+.screen.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Start Screen Card */
+.info-card {
+    background-color: var(--btn-bg);
+    border-radius: var(--radius-card);
+    padding: 3rem 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.info-card strong {
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Question Screen */
+.question-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.question-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-yellow);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: none;
+}
+
+.btn-capsule {
+    background-color: var(--btn-bg);
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 2px solid transparent;
+}
+
+.btn-capsule:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background-color: #e5c96b;
+}
+
+.btn-capsule:active {
+    transform: translateY(0);
+}
+
+.btn-option {
+    background-color: var(--btn-bg);
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 40px; /* Fully rounded for options specifically as in design */
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 2px solid transparent;
+}
+
+.btn-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background-color: #e5c96b;
+}
+
+.btn-option:active {
+    transform: translateY(0);
+}
+
+.btn-start-spacing {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.btn-restart-spacing {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: var(--text-yellow);
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    position: absolute;
+    top: -3rem; /* Adjusted for new layout */
+    left: 1rem;
+    z-index: 10;
+}
+
+.btn-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Result Screen */
+.header-result {
+    text-align: center;
+    width: 100%;
+}
+
+.result-content {
+    background-color: #ffffff;
+    border-radius: var(--radius-card);
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: left;
+    color: var(--text-dark);
+}
+
+.recommendation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recommendation-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    gap: 0.5rem;
+}
+
+.item-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.price-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.price-active {
+    color: var(--text-yellow); /* Yellow for price active */
+}
+
+.price-inactive {
+    color: #d1d1d1; /* Light grey for inactive */
+}
+
+/* Bottom Logos */
+.bottom-logos {
+    width: 100%;
+    padding: 1rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.logo-left, .logo-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.logo-text-small {
+    font-size: 0.9rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.logo-text-small small {
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.loading-overlay.hidden {
+    display: none;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(244, 196, 67, 0.3);
+    border-top-color: var(--text-yellow);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

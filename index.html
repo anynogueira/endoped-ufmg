@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2563eb">
+    <title>Endoped UFMG - Pastas Obturadoras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Logos -->
+    <header class="top-logos">
+        <img src="placeholder-top.png" alt="FAO UFMG" class="logo-top" style="display: none;">
+        <!-- If images are not available, use text for now -->
+        <div class="logo-text">FAO <strong>UF<em>m</em>G</strong><br><small>FACULDADE DE ODONTOLOGIA</small></div>
+    </header>
+
+    <main class="app-main" id="app-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <div class="info-card">
+                <p>O objetivo desse aplicativo é auxiliar na escolha do material obturador para tratamento endodôntico de <br><strong>DENTES DECÍDUOS</strong></p>
+            </div>
+            <button id="btn-start" class="btn btn-capsule btn-start-spacing">INICIAR</button>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="question-screen" class="screen">
+            <button id="btn-back" class="btn-icon" aria-label="Voltar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <div class="question-container">
+                <h2 id="question-text" class="question-text">TIPO DE DENTE</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <div class="header-result">
+                <h2 class="question-text">RECOMENDAÇÃO</h2>
+            </div>
+            <div id="result-content" class="result-content">
+                <!-- Result will be injected here -->
+            </div>
+            <button id="btn-restart" class="btn btn-capsule btn-restart-spacing">Recomeçar</button>
+        </div>
+        
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading-overlay hidden">
+            <div class="spinner"></div>
+        </div>
+    </main>
+
+    <!-- Bottom Logos -->
+    <footer class="bottom-logos">
+        <div class="logo-left">
+            <img src="placeholder-endoped.png" alt="EndoPed UFMG" class="logo-bottom" style="display: none;">
+            <div class="logo-text-small">EndoPed<br><small>UFMG</small></div>
+        </div>
+        <div class="logo-right">
+            <img src="placeholder-odonto.png" alt="Odontopediatria UFMG" class="logo-bottom" style="display: none;">
+            <div class="logo-text-small">Odontopediatria<br><small>UFMG</small></div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
