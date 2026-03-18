@@ -319,8 +319,7 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                },
-                                                "image": "assets/anterior_CTatingido.png"
+                                                }
                                             }
                                         ],
                                         "color": {
@@ -336,8 +335,7 @@
                                 "g": 0.800000011920929,
                                 "b": 1
                             }
-                        },
-                        "image": "assets/anterior_coroaintegra.png"
+                        }
                     },
                     {
                         "text": "Não",
@@ -647,8 +645,7 @@
                                                         "g": 0.800000011920929,
                                                         "b": 1
                                                     }
-                                                },
-                                                "image": "assets/anterior_lesao_CTok.png"
+                                                }
                                             },
                                             {
                                                 "text": "Não",
@@ -697,8 +694,7 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            },
-                                                            "image": "assets/anterior_comlesão_CTatingido.png"
+                                                            }
                                                         },
                                                         {
                                                             "text": "Não",
@@ -1061,8 +1057,7 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            },
-                                                            "image": "assets/posterior_lesaointer.png"
+                                                            }
                                                         },
                                                         {
                                                             "text": "Não",
@@ -1090,8 +1085,7 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            },
-                                                            "image": "assets/posterior.png"
+                                                            }
                                                         }
                                                     ],
                                                     "color": {
@@ -1099,7 +1093,8 @@
                                                         "g": 0.800000011920929,
                                                         "b": 1
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_lesaointer.png"
                                             },
                                             {
                                                 "text": "Não",

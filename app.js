@@ -146,20 +146,55 @@ function renderNode(nodeObj, addToHistory = true) {
     // It is a question node
     elements.questionText.textContent = node.text || "Pergunta não encontrada";
     elements.optionsContainer.innerHTML = '';
+    
+    // Manage Node Image
+    let nodeImageContainer = document.getElementById('node-image-container');
+    if (!nodeImageContainer) {
+        nodeImageContainer = document.createElement('div');
+        nodeImageContainer.id = 'node-image-container';
+        nodeImageContainer.className = 'node-img-container';
+        elements.questionText.parentNode.insertBefore(nodeImageContainer, elements.questionText.nextSibling);
+    }
+    nodeImageContainer.innerHTML = '';
+    
+    if (node.image) {
+        const img = document.createElement('img');
+        img.src = node.image;
+        img.className = 'node-img';
+        img.alt = "";
+        nodeImageContainer.appendChild(img);
+        nodeImageContainer.style.display = 'flex';
+    } else {
+        nodeImageContainer.style.display = 'none';
+    }
 
     node.edges.forEach(edge => {
-        // Resolve edge if it's a ref (though usually edges are inline in this JSON, 'to' is usually inline or a ref)
+        // Resolve edge if it's a ref
         const edgeObj = getNodeFromObj(edge);
         
         const btn = document.createElement('button');
         btn.className = 'btn btn-option';
         
-        // Remove {{ and }} from edge text if present, as they seem to indicate special formatting in some apps
+        // Remove {{ and }} from edge text
         const cleanText = (edgeObj.text || "Opção").replace(/\{\{|\}\}/g, '');
-        btn.textContent = cleanText;
+        
+        if (edgeObj.image) {
+            btn.classList.add('btn-with-image');
+            const imgContainer = document.createElement('div');
+            imgContainer.className = 'option-img-wrapper';
+            const img = document.createElement('img');
+            img.src = edgeObj.image;
+            img.className = 'option-img';
+            img.alt = "";
+            imgContainer.appendChild(img);
+            btn.appendChild(imgContainer);
+        }
+        
+        const span = document.createElement('span');
+        span.textContent = cleanText;
+        btn.appendChild(span);
         
         btn.onclick = () => {
-            // "to" can be a ref or a full node object
             renderNode(edgeObj.to);
         };
         

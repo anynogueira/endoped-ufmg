@@ -4,763 +4,6 @@
     "type": "NODE",
     "edges": [
         {
-            "text": "{{Anterior}}",
-            "id": "1:27",
-            "from": {
-                "$ref": "#"
-            },
-            "type": "EDGE",
-            "color": {
-                "r": 0.7019608020782471,
-                "g": 0.7019608020782471,
-                "b": 0.7019608020782471
-            },
-            "fromSide": "LEFT",
-            "toSide": "RIGHT",
-            "edgeType": "ELBOWED",
-            "directional": "UNI",
-            "to": {
-                "text": "Coroa Íntegra",
-                "id": "1:26",
-                "type": "NODE",
-                "edges": [
-                    {
-                        "text": "Sim",
-                        "id": "8:991",
-                        "from": {
-                            "$ref": "#/edges/0/to"
-                        },
-                        "type": "EDGE",
-                        "color": {
-                            "r": 0.7019608020782471,
-                            "g": 0.7019608020782471,
-                            "b": 0.7019608020782471
-                        },
-                        "fromSide": "BOTTOM",
-                        "toSide": "TOP",
-                        "edgeType": "ELBOWED",
-                        "directional": "UNI",
-                        "to": {
-                            "text": "Proximidade da esfoliação",
-                            "id": "8:990",
-                            "type": "NODE",
-                            "edges": [
-                                {
-                                    "text": "Sim",
-                                    "id": "8:1037",
-                                    "from": {
-                                        "$ref": "#/edges/0/to/edges/0/to"
-                                    },
-                                    "type": "EDGE",
-                                    "color": {
-                                        "r": 0.7019608020782471,
-                                        "g": 0.7019608020782471,
-                                        "b": 0.7019608020782471
-                                    },
-                                    "fromSide": "RIGHT",
-                                    "toSide": "LEFT",
-                                    "edgeType": "ELBOWED",
-                                    "directional": "UNI",
-                                    "to": {
-                                        "text": "Tem lesão periapical ou interradicular",
-                                        "id": "8:1112",
-                                        "type": "NODE",
-                                        "edges": [
-                                            {
-                                                "text": "Sim",
-                                                "id": "8:1189",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/0/to/edges/0/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "BOTTOM",
-                                                "toSide": "TOP",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Curativo de demora de Hidróxido de cálcio",
-                                                    "id": "2001:346",
-                                                    "type": "NODE",
-                                                    "edges": [
-                                                        {
-                                                            "text": "Sim",
-                                                            "id": "2001:1076",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/0/to/edges/0/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "BOTTOM",
-                                                            "toSide": "TOP",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Hidróxido de cálcio espessada com óxido de zinco $$",
-                                                                "id": "2001:388",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        },
-                                                        {
-                                                            "text": "Não",
-                                                            "id": "2012:279",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/0/to/edges/0/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "RIGHT",
-                                                            "toSide": "LEFT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga para os próximos passos",
-                                                                "id": "2012:278",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        }
-                                                    ],
-                                                    "color": {
-                                                        "r": 0.8941176533699036,
-                                                        "g": 0.800000011920929,
-                                                        "b": 1
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "text": "Não",
-                                                "id": "2001:1062",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/0/to/edges/0/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "RIGHT",
-                                                "toSide": "TOP",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Hidróxido de cálcio espessada com óxido de zinco $$",
-                                                    "id": "2001:363",
-                                                    "type": "NODE",
-                                                    "edges": [],
-                                                    "color": {
-                                                        "r": 1,
-                                                        "g": 0.7882353067398071,
-                                                        "b": 0.26274511218070984
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "color": {
-                                            "r": 0.8941176533699036,
-                                            "g": 0.800000011920929,
-                                            "b": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "text": "Não",
-                                    "id": "2001:871",
-                                    "from": {
-                                        "$ref": "#/edges/0/to/edges/0/to"
-                                    },
-                                    "type": "EDGE",
-                                    "color": {
-                                        "r": 0.7019608020782471,
-                                        "g": 0.7019608020782471,
-                                        "b": 0.7019608020782471
-                                    },
-                                    "fromSide": "LEFT",
-                                    "toSide": "AUTO",
-                                    "edgeType": "ELBOWED",
-                                    "directional": "UNI",
-                                    "to": {
-                                        "text": "Tem lesão periapical ou interradicular",
-                                        "id": "2001:876",
-                                        "type": "NODE",
-                                        "edges": [
-                                            {
-                                                "text": "Sim",
-                                                "id": "2001:919",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/0/to/edges/1/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "RIGHT",
-                                                "toSide": "TOP",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Curativo de demora de Hidróxido de cálcio",
-                                                    "id": "2001:943",
-                                                    "type": "NODE",
-                                                    "edges": [
-                                                        {
-                                                            "text": "Sim",
-                                                            "id": "2001:963",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/0/to/edges/1/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "BOTTOM",
-                                                            "toSide": "RIGHT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "OZE $",
-                                                                "id": "2001:912",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        },
-                                                        {
-                                                            "text": "Não",
-                                                            "id": "2012:176",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/0/to/edges/1/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "RIGHT",
-                                                            "toSide": "TOP",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga com OZE $",
-                                                                "id": "2012:181",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        }
-                                                    ],
-                                                    "color": {
-                                                        "r": 0.8941176533699036,
-                                                        "g": 0.800000011920929,
-                                                        "b": 1
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "text": "Não",
-                                                "id": "2001:897",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/0/to/edges/1/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "BOTTOM",
-                                                "toSide": "TOP",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "OZE $",
-                                                    "id": "2001:902",
-                                                    "type": "NODE",
-                                                    "edges": [],
-                                                    "color": {
-                                                        "r": 1,
-                                                        "g": 0.7882353067398071,
-                                                        "b": 0.26274511218070984
-                                                    }
-                                                },
-                                                "image": "assets/anterior_CTatingido.png"
-                                            }
-                                        ],
-                                        "color": {
-                                            "r": 0.8941176533699036,
-                                            "g": 0.800000011920929,
-                                            "b": 1
-                                        }
-                                    }
-                                }
-                            ],
-                            "color": {
-                                "r": 0.8941176533699036,
-                                "g": 0.800000011920929,
-                                "b": 1
-                            }
-                        },
-                        "image": "assets/anterior_coroaintegra.png"
-                    },
-                    {
-                        "text": "Não",
-                        "id": "2001:407",
-                        "from": {
-                            "$ref": "#/edges/0/to"
-                        },
-                        "type": "EDGE",
-                        "color": {
-                            "r": 0.7019608020782471,
-                            "g": 0.7019608020782471,
-                            "b": 0.7019608020782471
-                        },
-                        "fromSide": "LEFT",
-                        "toSide": "RIGHT",
-                        "edgeType": "ELBOWED",
-                        "directional": "UNI",
-                        "to": {
-                            "text": "Proximidade da esfoliação",
-                            "id": "2001:412",
-                            "type": "NODE",
-                            "edges": [
-                                {
-                                    "text": "Sim",
-                                    "id": "2001:419",
-                                    "from": {
-                                        "$ref": "#/edges/0/to/edges/1/to"
-                                    },
-                                    "type": "EDGE",
-                                    "color": {
-                                        "r": 0.7019608020782471,
-                                        "g": 0.7019608020782471,
-                                        "b": 0.7019608020782471
-                                    },
-                                    "fromSide": "BOTTOM",
-                                    "toSide": "TOP",
-                                    "edgeType": "ELBOWED",
-                                    "directional": "UNI",
-                                    "to": {
-                                        "text": "Tem lesão periapical ou interradicular",
-                                        "id": "2001:440",
-                                        "type": "NODE",
-                                        "edges": [
-                                            {
-                                                "text": "Sim",
-                                                "id": "2001:635",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/1/to/edges/0/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "LEFT",
-                                                "toSide": "RIGHT",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Curativo de demora de Hidróxido de cálcio",
-                                                    "id": "2001:640",
-                                                    "type": "NODE",
-                                                    "edges": [
-                                                        {
-                                                            "text": "Sim",
-                                                            "id": "2001:723",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "BOTTOM",
-                                                            "toSide": "LEFT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
-                                                                "id": "2001:580",
-                                                                "type": "NODE",
-                                                                "edges": [
-                                                                    {
-                                                                        "text": "Sim",
-                                                                        "id": "2001:601",
-                                                                        "from": {
-                                                                            "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
-                                                                        },
-                                                                        "type": "EDGE",
-                                                                        "color": {
-                                                                            "r": 0.7019608020782471,
-                                                                            "g": 0.7019608020782471,
-                                                                            "b": 0.7019608020782471
-                                                                        },
-                                                                        "fromSide": "RIGHT",
-                                                                        "toSide": "TOP",
-                                                                        "edgeType": "ELBOWED",
-                                                                        "directional": "UNI",
-                                                                        "to": {
-                                                                            "text": "Vitapex $$$ Endoflas $$ Guedes-Pinto $$",
-                                                                            "id": "2001:618",
-                                                                            "type": "NODE",
-                                                                            "edges": [],
-                                                                            "color": {
-                                                                                "r": 1,
-                                                                                "g": 0.7882353067398071,
-                                                                                "b": 0.26274511218070984
-                                                                            }
-                                                                        }
-                                                                    },
-                                                                    {
-                                                                        "text": "Não",
-                                                                        "id": "2001:606",
-                                                                        "from": {
-                                                                            "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
-                                                                        },
-                                                                        "type": "EDGE",
-                                                                        "color": {
-                                                                            "r": 0.7019608020782471,
-                                                                            "g": 0.7019608020782471,
-                                                                            "b": 0.7019608020782471
-                                                                        },
-                                                                        "fromSide": "BOTTOM",
-                                                                        "toSide": "TOP",
-                                                                        "edgeType": "ELBOWED",
-                                                                        "directional": "UNI",
-                                                                        "to": {
-                                                                            "text": "Endoflas $$ Guedes-Pinto $$",
-                                                                            "id": "2001:628",
-                                                                            "type": "NODE",
-                                                                            "edges": [],
-                                                                            "color": {
-                                                                                "r": 1,
-                                                                                "g": 0.7882353067398071,
-                                                                                "b": 0.26274511218070984
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                ],
-                                                                "color": {
-                                                                    "r": 0.8941176533699036,
-                                                                    "g": 0.800000011920929,
-                                                                    "b": 1
-                                                                }
-                                                            }
-                                                        },
-                                                        {
-                                                            "text": "Não",
-                                                            "id": "2012:214",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "TOP",
-                                                            "toSide": "TOP",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga para os próximos passos",
-                                                                "id": "2012:213",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        }
-                                                    ],
-                                                    "color": {
-                                                        "r": 0.8941176533699036,
-                                                        "g": 0.800000011920929,
-                                                        "b": 1
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "text": "Não",
-                                                "id": "2001:587",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/1/to/edges/0/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "RIGHT",
-                                                "toSide": "TOP",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
-                                                }
-                                            }
-                                        ],
-                                        "color": {
-                                            "r": 0.8941176533699036,
-                                            "g": 0.800000011920929,
-                                            "b": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "text": "Não",
-                                    "id": "2001:424",
-                                    "from": {
-                                        "$ref": "#/edges/0/to/edges/1/to"
-                                    },
-                                    "type": "EDGE",
-                                    "color": {
-                                        "r": 0.7019608020782471,
-                                        "g": 0.7019608020782471,
-                                        "b": 0.7019608020782471
-                                    },
-                                    "fromSide": "LEFT",
-                                    "toSide": "RIGHT",
-                                    "edgeType": "ELBOWED",
-                                    "directional": "UNI",
-                                    "to": {
-                                        "text": "Tem lesão periapical ou interradicular",
-                                        "id": "2001:429",
-                                        "type": "NODE",
-                                        "edges": [
-                                            {
-                                                "text": "Sim",
-                                                "id": "2001:452",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/1/to/edges/1/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "LEFT",
-                                                "toSide": "RIGHT",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Curativo de demora de Hidróxido de cálcio",
-                                                    "id": "2001:458",
-                                                    "type": "NODE",
-                                                    "edges": [
-                                                        {
-                                                            "text": "Sim",
-                                                            "id": "2001:463",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "LEFT",
-                                                            "toSide": "RIGHT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/1/to"
-                                                            }
-                                                        },
-                                                        {
-                                                            "text": "Não",
-                                                            "id": "2012:221",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/0/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "BOTTOM",
-                                                            "toSide": "RIGHT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga para os próximos passos",
-                                                                "id": "2012:226",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        }
-                                                    ],
-                                                    "color": {
-                                                        "r": 0.8941176533699036,
-                                                        "g": 0.800000011920929,
-                                                        "b": 1
-                                                    }
-                                                },
-                                                "image": "assets/anterior_lesao_CTok.png"
-                                            },
-                                            {
-                                                "text": "Não",
-                                                "id": "2001:447",
-                                                "from": {
-                                                    "$ref": "#/edges/0/to/edges/1/to/edges/1/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "TOP",
-                                                "toSide": "TOP",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
-                                                    "id": "2001:457",
-                                                    "type": "NODE",
-                                                    "edges": [
-                                                        {
-                                                            "text": "Sim",
-                                                            "id": "2001:460",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/1/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "BOTTOM",
-                                                            "toSide": "RIGHT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "OZE $ Endoflas $$",
-                                                                "id": "2001:459",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            },
-                                                            "image": "assets/anterior_comlesão_CTatingido.png"
-                                                        },
-                                                        {
-                                                            "text": "Não",
-                                                            "id": "2001:462",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/1/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "LEFT",
-                                                            "toSide": "RIGHT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Endoflas $$",
-                                                                "id": "2001:461",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        }
-                                                    ],
-                                                    "color": {
-                                                        "r": 0.8941176533699036,
-                                                        "g": 0.800000011920929,
-                                                        "b": 1
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "color": {
-                                            "r": 0.8941176533699036,
-                                            "g": 0.800000011920929,
-                                            "b": 1
-                                        }
-                                    }
-                                }
-                            ],
-                            "color": {
-                                "r": 0.8941176533699036,
-                                "g": 0.800000011920929,
-                                "b": 1
-                            }
-                        }
-                    }
-                ],
-                "color": {
-                    "r": 1,
-                    "g": 0.6196078658103943,
-                    "b": 0.25882354378700256
-                }
-            }
-        },
-        {
             "text": "{{Posterior}}",
             "id": "1:41",
             "from": {
@@ -785,7 +28,7 @@
                         "text": "Sim",
                         "id": "2001:739",
                         "from": {
-                            "$ref": "#/edges/1/to"
+                            "$ref": "#/edges/0/to"
                         },
                         "type": "EDGE",
                         "color": {
@@ -806,7 +49,7 @@
                                     "text": "Sim",
                                     "id": "2001:753",
                                     "from": {
-                                        "$ref": "#/edges/1/to/edges/0/to"
+                                        "$ref": "#/edges/0/to/edges/0/to"
                                     },
                                     "type": "EDGE",
                                     "color": {
@@ -827,7 +70,7 @@
                                                 "text": "Sim",
                                                 "id": "2001:758",
                                                 "from": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/0/to"
+                                                    "$ref": "#/edges/0/to/edges/0/to/edges/0/to"
                                                 },
                                                 "type": "EDGE",
                                                 "color": {
@@ -840,14 +83,14 @@
                                                 "edgeType": "ELBOWED",
                                                 "directional": "UNI",
                                                 "to": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
+                                                    "$ref": "#/edges/0/to/edges/0/to/edges/1/to"
                                                 }
                                             },
                                             {
                                                 "text": "Não",
                                                 "id": "2012:257",
                                                 "from": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/0/to"
+                                                    "$ref": "#/edges/0/to/edges/0/to/edges/0/to"
                                                 },
                                                 "type": "EDGE",
                                                 "color": {
@@ -883,7 +126,7 @@
                                     "text": "Não",
                                     "id": "2001:751",
                                     "from": {
-                                        "$ref": "#/edges/1/to/edges/0/to"
+                                        "$ref": "#/edges/0/to/edges/0/to"
                                     },
                                     "type": "EDGE",
                                     "color": {
@@ -904,7 +147,7 @@
                                                 "text": "Sim",
                                                 "id": "2001:755",
                                                 "from": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
+                                                    "$ref": "#/edges/0/to/edges/0/to/edges/1/to"
                                                 },
                                                 "type": "EDGE",
                                                 "color": {
@@ -932,7 +175,7 @@
                                                 "text": "Não",
                                                 "id": "2001:757",
                                                 "from": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
+                                                    "$ref": "#/edges/0/to/edges/0/to/edges/1/to"
                                                 },
                                                 "type": "EDGE",
                                                 "color": {
@@ -976,7 +219,7 @@
                         "text": "Não",
                         "id": "2001:744",
                         "from": {
-                            "$ref": "#/edges/1/to"
+                            "$ref": "#/edges/0/to"
                         },
                         "type": "EDGE",
                         "color": {
@@ -997,7 +240,7 @@
                                     "text": "Sim",
                                     "id": "2001:973",
                                     "from": {
-                                        "$ref": "#/edges/1/to/edges/1/to"
+                                        "$ref": "#/edges/0/to/edges/1/to"
                                     },
                                     "type": "EDGE",
                                     "color": {
@@ -1018,7 +261,7 @@
                                                 "text": "Sim",
                                                 "id": "2001:1011",
                                                 "from": {
-                                                    "$ref": "#/edges/1/to/edges/1/to/edges/0/to"
+                                                    "$ref": "#/edges/0/to/edges/1/to/edges/0/to"
                                                 },
                                                 "type": "EDGE",
                                                 "color": {
@@ -1039,7 +282,7 @@
                                                             "text": "Sim",
                                                             "id": "2001:1016",
                                                             "from": {
-                                                                "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
+                                                                "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to"
                                                             },
                                                             "type": "EDGE",
                                                             "color": {
@@ -1061,14 +304,13 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            },
-                                                            "image": "assets/posterior_lesaointer.png"
+                                                            }
                                                         },
                                                         {
                                                             "text": "Não",
                                                             "id": "2001:1021",
                                                             "from": {
-                                                                "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
+                                                                "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to"
                                                             },
                                                             "type": "EDGE",
                                                             "color": {
@@ -1090,8 +332,7 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            },
-                                                            "image": "assets/posterior.png"
+                                                            }
                                                         }
                                                     ],
                                                     "color": {
@@ -1105,7 +346,7 @@
                                                 "text": "Não",
                                                 "id": "2012:240",
                                                 "from": {
-                                                    "$ref": "#/edges/1/to/edges/1/to/edges/0/to"
+                                                    "$ref": "#/edges/0/to/edges/1/to/edges/0/to"
                                                 },
                                                 "type": "EDGE",
                                                 "color": {
@@ -1141,7 +382,7 @@
                                     "text": "Não",
                                     "id": "2001:968",
                                     "from": {
-                                        "$ref": "#/edges/1/to/edges/1/to"
+                                        "$ref": "#/edges/0/to/edges/1/to"
                                     },
                                     "type": "EDGE",
                                     "color": {
@@ -1154,7 +395,760 @@
                                     "edgeType": "ELBOWED",
                                     "directional": "UNI",
                                     "to": {
-                                        "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
+                                        "$ref": "#/edges/0/to/edges/1/to/edges/0/to/edges/0/to"
+                                    }
+                                }
+                            ],
+                            "color": {
+                                "r": 0.8941176533699036,
+                                "g": 0.800000011920929,
+                                "b": 1
+                            }
+                        }
+                    }
+                ],
+                "color": {
+                    "r": 1,
+                    "g": 0.6196078658103943,
+                    "b": 0.25882354378700256
+                }
+            }
+        },
+        {
+            "text": "{{Anterior}}",
+            "id": "1:27",
+            "from": {
+                "$ref": "#"
+            },
+            "type": "EDGE",
+            "color": {
+                "r": 0.7019608020782471,
+                "g": 0.7019608020782471,
+                "b": 0.7019608020782471
+            },
+            "fromSide": "LEFT",
+            "toSide": "RIGHT",
+            "edgeType": "ELBOWED",
+            "directional": "UNI",
+            "to": {
+                "text": "Coroa Íntegra",
+                "id": "1:26",
+                "type": "NODE",
+                "edges": [
+                    {
+                        "text": "Sim",
+                        "id": "8:991",
+                        "from": {
+                            "$ref": "#/edges/1/to"
+                        },
+                        "type": "EDGE",
+                        "color": {
+                            "r": 0.7019608020782471,
+                            "g": 0.7019608020782471,
+                            "b": 0.7019608020782471
+                        },
+                        "fromSide": "BOTTOM",
+                        "toSide": "TOP",
+                        "edgeType": "ELBOWED",
+                        "directional": "UNI",
+                        "to": {
+                            "text": "Proximidade da esfoliação",
+                            "id": "8:990",
+                            "type": "NODE",
+                            "edges": [
+                                {
+                                    "text": "Sim",
+                                    "id": "8:1037",
+                                    "from": {
+                                        "$ref": "#/edges/1/to/edges/0/to"
+                                    },
+                                    "type": "EDGE",
+                                    "color": {
+                                        "r": 0.7019608020782471,
+                                        "g": 0.7019608020782471,
+                                        "b": 0.7019608020782471
+                                    },
+                                    "fromSide": "RIGHT",
+                                    "toSide": "LEFT",
+                                    "edgeType": "ELBOWED",
+                                    "directional": "UNI",
+                                    "to": {
+                                        "text": "Tem lesão periapical ou interradicular",
+                                        "id": "8:1112",
+                                        "type": "NODE",
+                                        "edges": [
+                                            {
+                                                "text": "Sim",
+                                                "id": "8:1189",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/0/to/edges/0/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "BOTTOM",
+                                                "toSide": "TOP",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "text": "Curativo de demora de Hidróxido de cálcio",
+                                                    "id": "2001:346",
+                                                    "type": "NODE",
+                                                    "edges": [
+                                                        {
+                                                            "text": "Sim",
+                                                            "id": "2001:1076",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "BOTTOM",
+                                                            "toSide": "TOP",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Hidróxido de cálcio espessada com óxido de zinco $$",
+                                                                "id": "2001:388",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "text": "Não",
+                                                            "id": "2012:279",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "RIGHT",
+                                                            "toSide": "LEFT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga para os próximos passos",
+                                                                "id": "2012:278",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "color": {
+                                                        "r": 0.8941176533699036,
+                                                        "g": 0.800000011920929,
+                                                        "b": 1
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "text": "Não",
+                                                "id": "2001:1062",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/0/to/edges/0/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "RIGHT",
+                                                "toSide": "TOP",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "text": "Hidróxido de cálcio espessada com óxido de zinco $$",
+                                                    "id": "2001:363",
+                                                    "type": "NODE",
+                                                    "edges": [],
+                                                    "color": {
+                                                        "r": 1,
+                                                        "g": 0.7882353067398071,
+                                                        "b": 0.26274511218070984
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "color": {
+                                            "r": 0.8941176533699036,
+                                            "g": 0.800000011920929,
+                                            "b": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "text": "Não",
+                                    "id": "2001:871",
+                                    "from": {
+                                        "$ref": "#/edges/1/to/edges/0/to"
+                                    },
+                                    "type": "EDGE",
+                                    "color": {
+                                        "r": 0.7019608020782471,
+                                        "g": 0.7019608020782471,
+                                        "b": 0.7019608020782471
+                                    },
+                                    "fromSide": "LEFT",
+                                    "toSide": "AUTO",
+                                    "edgeType": "ELBOWED",
+                                    "directional": "UNI",
+                                    "to": {
+                                        "text": "Tem lesão periapical ou interradicular",
+                                        "id": "2001:876",
+                                        "type": "NODE",
+                                        "edges": [
+                                            {
+                                                "text": "Sim",
+                                                "id": "2001:919",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "RIGHT",
+                                                "toSide": "TOP",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "text": "Curativo de demora de Hidróxido de cálcio",
+                                                    "id": "2001:943",
+                                                    "type": "NODE",
+                                                    "edges": [
+                                                        {
+                                                            "text": "Sim",
+                                                            "id": "2001:963",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/0/to/edges/1/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "BOTTOM",
+                                                            "toSide": "RIGHT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "OZE $",
+                                                                "id": "2001:912",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "text": "Não",
+                                                            "id": "2012:176",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/0/to/edges/1/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "RIGHT",
+                                                            "toSide": "TOP",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga com OZE $",
+                                                                "id": "2012:181",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "color": {
+                                                        "r": 0.8941176533699036,
+                                                        "g": 0.800000011920929,
+                                                        "b": 1
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "text": "Não",
+                                                "id": "2001:897",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "BOTTOM",
+                                                "toSide": "TOP",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "text": "OZE $",
+                                                    "id": "2001:902",
+                                                    "type": "NODE",
+                                                    "edges": [],
+                                                    "color": {
+                                                        "r": 1,
+                                                        "g": 0.7882353067398071,
+                                                        "b": 0.26274511218070984
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "color": {
+                                            "r": 0.8941176533699036,
+                                            "g": 0.800000011920929,
+                                            "b": 1
+                                        }
+                                    }
+                                }
+                            ],
+                            "color": {
+                                "r": 0.8941176533699036,
+                                "g": 0.800000011920929,
+                                "b": 1
+                            }
+                        }
+                    },
+                    {
+                        "text": "Não",
+                        "id": "2001:407",
+                        "from": {
+                            "$ref": "#/edges/1/to"
+                        },
+                        "type": "EDGE",
+                        "color": {
+                            "r": 0.7019608020782471,
+                            "g": 0.7019608020782471,
+                            "b": 0.7019608020782471
+                        },
+                        "fromSide": "LEFT",
+                        "toSide": "RIGHT",
+                        "edgeType": "ELBOWED",
+                        "directional": "UNI",
+                        "to": {
+                            "text": "Proximidade da esfoliação",
+                            "id": "2001:412",
+                            "type": "NODE",
+                            "edges": [
+                                {
+                                    "text": "Sim",
+                                    "id": "2001:419",
+                                    "from": {
+                                        "$ref": "#/edges/1/to/edges/1/to"
+                                    },
+                                    "type": "EDGE",
+                                    "color": {
+                                        "r": 0.7019608020782471,
+                                        "g": 0.7019608020782471,
+                                        "b": 0.7019608020782471
+                                    },
+                                    "fromSide": "BOTTOM",
+                                    "toSide": "TOP",
+                                    "edgeType": "ELBOWED",
+                                    "directional": "UNI",
+                                    "to": {
+                                        "text": "Tem lesão periapical ou interradicular",
+                                        "id": "2001:440",
+                                        "type": "NODE",
+                                        "edges": [
+                                            {
+                                                "text": "Sim",
+                                                "id": "2001:635",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/1/to/edges/0/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "LEFT",
+                                                "toSide": "RIGHT",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "text": "Curativo de demora de Hidróxido de cálcio",
+                                                    "id": "2001:640",
+                                                    "type": "NODE",
+                                                    "edges": [
+                                                        {
+                                                            "text": "Sim",
+                                                            "id": "2001:723",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "BOTTOM",
+                                                            "toSide": "LEFT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
+                                                                "id": "2001:580",
+                                                                "type": "NODE",
+                                                                "edges": [
+                                                                    {
+                                                                        "text": "Sim",
+                                                                        "id": "2001:601",
+                                                                        "from": {
+                                                                            "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
+                                                                        },
+                                                                        "type": "EDGE",
+                                                                        "color": {
+                                                                            "r": 0.7019608020782471,
+                                                                            "g": 0.7019608020782471,
+                                                                            "b": 0.7019608020782471
+                                                                        },
+                                                                        "fromSide": "RIGHT",
+                                                                        "toSide": "TOP",
+                                                                        "edgeType": "ELBOWED",
+                                                                        "directional": "UNI",
+                                                                        "to": {
+                                                                            "text": "Vitapex $$$ Endoflas $$ Guedes-Pinto $$",
+                                                                            "id": "2001:618",
+                                                                            "type": "NODE",
+                                                                            "edges": [],
+                                                                            "color": {
+                                                                                "r": 1,
+                                                                                "g": 0.7882353067398071,
+                                                                                "b": 0.26274511218070984
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "text": "Não",
+                                                                        "id": "2001:606",
+                                                                        "from": {
+                                                                            "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
+                                                                        },
+                                                                        "type": "EDGE",
+                                                                        "color": {
+                                                                            "r": 0.7019608020782471,
+                                                                            "g": 0.7019608020782471,
+                                                                            "b": 0.7019608020782471
+                                                                        },
+                                                                        "fromSide": "BOTTOM",
+                                                                        "toSide": "TOP",
+                                                                        "edgeType": "ELBOWED",
+                                                                        "directional": "UNI",
+                                                                        "to": {
+                                                                            "text": "Endoflas $$ Guedes-Pinto $$",
+                                                                            "id": "2001:628",
+                                                                            "type": "NODE",
+                                                                            "edges": [],
+                                                                            "color": {
+                                                                                "r": 1,
+                                                                                "g": 0.7882353067398071,
+                                                                                "b": 0.26274511218070984
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "color": {
+                                                                    "r": 0.8941176533699036,
+                                                                    "g": 0.800000011920929,
+                                                                    "b": 1
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "text": "Não",
+                                                            "id": "2012:214",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "TOP",
+                                                            "toSide": "TOP",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga para os próximos passos",
+                                                                "id": "2012:213",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "color": {
+                                                        "r": 0.8941176533699036,
+                                                        "g": 0.800000011920929,
+                                                        "b": 1
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "text": "Não",
+                                                "id": "2001:587",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/1/to/edges/0/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "RIGHT",
+                                                "toSide": "TOP",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "$ref": "#/edges/1/to/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
+                                                }
+                                            }
+                                        ],
+                                        "color": {
+                                            "r": 0.8941176533699036,
+                                            "g": 0.800000011920929,
+                                            "b": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "text": "Não",
+                                    "id": "2001:424",
+                                    "from": {
+                                        "$ref": "#/edges/1/to/edges/1/to"
+                                    },
+                                    "type": "EDGE",
+                                    "color": {
+                                        "r": 0.7019608020782471,
+                                        "g": 0.7019608020782471,
+                                        "b": 0.7019608020782471
+                                    },
+                                    "fromSide": "LEFT",
+                                    "toSide": "RIGHT",
+                                    "edgeType": "ELBOWED",
+                                    "directional": "UNI",
+                                    "to": {
+                                        "text": "Tem lesão periapical ou interradicular",
+                                        "id": "2001:429",
+                                        "type": "NODE",
+                                        "edges": [
+                                            {
+                                                "text": "Sim",
+                                                "id": "2001:452",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/1/to/edges/1/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "LEFT",
+                                                "toSide": "RIGHT",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "text": "Curativo de demora de Hidróxido de cálcio",
+                                                    "id": "2001:458",
+                                                    "type": "NODE",
+                                                    "edges": [
+                                                        {
+                                                            "text": "Sim",
+                                                            "id": "2001:463",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/1/to/edges/1/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "LEFT",
+                                                            "toSide": "RIGHT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "$ref": "#/edges/1/to/edges/1/to/edges/1/to/edges/1/to"
+                                                            }
+                                                        },
+                                                        {
+                                                            "text": "Não",
+                                                            "id": "2012:221",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/1/to/edges/1/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "BOTTOM",
+                                                            "toSide": "RIGHT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Faça primeiro o Curativo de demora de Hidróxido de cálcio e depois prossiga para os próximos passos",
+                                                                "id": "2012:226",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "color": {
+                                                        "r": 0.8941176533699036,
+                                                        "g": 0.800000011920929,
+                                                        "b": 1
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "text": "Não",
+                                                "id": "2001:447",
+                                                "from": {
+                                                    "$ref": "#/edges/1/to/edges/1/to/edges/1/to"
+                                                },
+                                                "type": "EDGE",
+                                                "color": {
+                                                    "r": 0.7019608020782471,
+                                                    "g": 0.7019608020782471,
+                                                    "b": 0.7019608020782471
+                                                },
+                                                "fromSide": "TOP",
+                                                "toSide": "TOP",
+                                                "edgeType": "ELBOWED",
+                                                "directional": "UNI",
+                                                "to": {
+                                                    "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
+                                                    "id": "2001:457",
+                                                    "type": "NODE",
+                                                    "edges": [
+                                                        {
+                                                            "text": "Sim",
+                                                            "id": "2001:460",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/1/to/edges/1/to/edges/1/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "BOTTOM",
+                                                            "toSide": "RIGHT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "OZE $ Endoflas $$",
+                                                                "id": "2001:459",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "text": "Não",
+                                                            "id": "2001:462",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/1/to/edges/1/to/edges/1/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "LEFT",
+                                                            "toSide": "RIGHT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Endoflas $$",
+                                                                "id": "2001:461",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "color": {
+                                                        "r": 0.8941176533699036,
+                                                        "g": 0.800000011920929,
+                                                        "b": 1
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "color": {
+                                            "r": 0.8941176533699036,
+                                            "g": 0.800000011920929,
+                                            "b": 1
+                                        }
                                     }
                                 }
                             ],
