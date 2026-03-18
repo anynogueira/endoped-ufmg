@@ -77,38 +77,22 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.logo-text {
-    font-size: 1.15rem;
-    color: var(--text-dark);
-    line-height: 1.15;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-.logo-text strong {
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.logo-text em {
-    color: #c00;
-    font-style: italic;
-    font-family: serif;
-    font-weight: bold;
-}
-
-.logo-text small {
-    font-size: 0.5rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+/* --- Image Logos --- */
+.logo-img {
     display: block;
-    margin-top: 6px;
-    color: var(--text-muted);
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-.small-logo {
-    transform: scale(0.9);
-    transform-origin: left center;
+.logo-fao {
+    height: 70px;
+    margin: 0 auto;
+}
+
+.logo-fao-small {
+    height: 45px;
+    margin: 0 auto;
 }
 
 /* --- Header Clickable (Home) --- */
@@ -289,42 +273,17 @@ body {
     gap: 0.7rem;
 }
 
-.elegant-icon {
-    opacity: 0.85;
+.logo-endoped {
+    height: 110px;
 }
 
-.text-brand {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #c9aa58;
-    line-height: 1.1;
+.logo-odontopediatria {
+    height: 110px;
 }
 
-.text-brand span {
-    font-weight: 700;
-    font-style: italic;
-}
-
-.text-brand small {
-    display: block;
-    font-size: 0.6rem;
-    font-weight: 700;
-    color: var(--text-muted);
-    letter-spacing: 1px;
-    margin-top: 4px;
-}
-
-.odontoped-font {
-    font-family: 'Brush Script MT', cursive, serif;
-    font-size: 1.6rem;
-    color: #c9aa58;
-    line-height: 0.8;
-}
-
-.justify-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo-odontopediatria-small {
+    height: 80px;
+    margin: 0 auto;
 }
 
 /* --- Internal Content (Questions & Results) --- */
