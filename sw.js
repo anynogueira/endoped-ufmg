@@ -1,11 +1,11 @@
-const CACHE_NAME = 'endoped-ufmg-v1';
+const CACHE_NAME = 'endoped-ufmg-v2';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/flow.json',
-  '/manifest.json'
+  './',
+  './index.html',
+  './style.css',
+  './app.js',
+  './flow.json',
+  './manifest.json'
 ];
 
 self.addEventListener('install', event => {

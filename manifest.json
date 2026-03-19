@@ -2,7 +2,7 @@
   "name": "Endoped UFMG - Pastas Obturadoras",
   "short_name": "Endoped UFMG",
   "description": "App para escolha das melhores opções de pastas obturadoras para endodontia de dentes decíduos.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#fcfbfa",
