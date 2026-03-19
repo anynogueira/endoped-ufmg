@@ -14,6 +14,7 @@ const screens = {
 const elements = {
     loading: document.getElementById('loading'),
     btnToInstructions: document.getElementById('btn-to-instructions'),
+    btnInstall: document.getElementById('btn-install'),
     btnStart: document.getElementById('btn-start'),
     btnBack: document.getElementById('btn-back'),
     btnRestart: document.getElementById('btn-restart'),
@@ -24,6 +25,15 @@ const elements = {
 };
 
 // Initialization
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (elements.btnInstall) {
+        elements.btnInstall.style.display = 'block';
+    }
+});
+
 async function initApp() {
     showLoading(true);
     try {
@@ -35,6 +45,18 @@ async function initApp() {
         
         // Setup event listeners
         if (elements.btnToInstructions) elements.btnToInstructions.addEventListener('click', showInstructions);
+        if (elements.btnInstall) {
+            elements.btnInstall.addEventListener('click', async () => {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        elements.btnInstall.style.display = 'none';
+                    }
+                    deferredPrompt = null;
+                }
+            });
+        }
         if (elements.btnStart) elements.btnStart.addEventListener('click', startFlow);
         if (elements.btnBack) elements.btnBack.addEventListener('click', goBack);
         if (elements.btnRestart) elements.btnRestart.addEventListener('click', resetFlow);

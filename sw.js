@@ -1,4 +1,4 @@
-const CACHE_NAME = 'endoped-ufmg-v2';
+const CACHE_NAME = 'endoped-ufmg-v3';
 const urlsToCache = [
   './',
   './index.html',
