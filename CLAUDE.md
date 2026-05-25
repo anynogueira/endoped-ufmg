@@ -135,6 +135,50 @@ Navega pela árvore seguindo caminhos textuais (ex: `["posterior", "não", "sim"
 
 8. **Header clicável** — Os headers com classe `.clickable-header` funcionam como botão "Home" (chamam `resetFlow`). Isso não é óbvio pelo HTML.
 
+## Editor do Fluxograma (`editor.html`)
+
+Ferramenta de administração separada para editar o `flow.json` visualmente. **Não faz parte do app principal** — é acessível apenas via `http://localhost:PORT/editor.html`.
+
+### Arquivos
+- `editor.html` — Página standalone do editor
+- `editor.css` — Estilos do painel admin (dark toolbar, tree view)
+- `editor.js` — Lógica completa: load, render, edit, export
+
+### Arquitetura
+
+**Ao carregar:**
+1. Faz `fetch('flow.json')` ou recebe arquivo via import
+2. Resolve TODOS os `$ref` recursivamente (`resolveAllRefs`) — edges que tinham `$ref` em `to` agora apontam diretamente para o nó JS real
+3. Marca edges que tinham `$ref` com `_wasRef = true`
+4. Renderiza a árvore recursivamente, usando um `Set<id>` para detectar nós compartilhados
+
+**Nós compartilhados (referências):**
+- Nós que aparecem em mais de um lugar (via `$ref` no original) são o mesmo objeto JS
+- A primeira ocorrência renderiza o nó completo
+- Ocorrências subsequentes renderizam um card azul "Referência → [texto]" clicável que scrolla até o original
+
+**Ao exportar (`cloneForExport`):**
+1. Percorre a árvore, clonando cada nó
+2. Mantém um `Map<id, jsonPath>` dos nós já serializados
+3. Primeira ocorrência: serializa inline com path registrado
+4. Ocorrências seguintes: substitui por `{ "$ref": path_da_primeira_ocorrencia }`
+5. Reconstrói o campo `from` de cada edge como `{ "$ref": path_do_nó_pai }`
+6. Remove propriedades internas (`_wasRef`, `_origRef`)
+
+### Funcionalidades
+- Edição inline de textos de nós e arestas
+- Adicionar/remover imagens (por path relativo, ex: `assets/foto.png`)
+- Adicionar/remover nós e arestas
+- Reordenar arestas (↑/↓)
+- Colapsar/expandir subárvores
+- Barra de estatísticas (nós, arestas, resultados, referências)
+- Import/export de JSON com reconstrução automática de `$ref`
+
+### Cuidados
+- O editor **não faz upload de imagens** — o usuário deve colocar a imagem em `assets/` manualmente
+- IDs de novos nós seguem o formato `new:N` — diferente dos IDs originais do Figma (`1:2`, `8:990`)
+- Após exportar e substituir o `flow.json`, lembrar de incrementar `CACHE_NAME` no `sw.js`
+
 ## Repositório Git
 
 - **Origin:** `git@github.com:fm4teus/endoped-ufmg.git` (fork)
