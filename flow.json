@@ -337,7 +337,7 @@
                                 "b": 1
                             }
                         },
-                        "image": "assets/anterior_coroaintegra.png"
+                        "image": "assets/coroaintegra_anterior.png"
                     },
                     {
                         "text": "Não",
@@ -610,7 +610,73 @@
                                                             "edgeType": "ELBOWED",
                                                             "directional": "UNI",
                                                             "to": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/1/to"
+                                                                "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
+                                                                "id": "2001:457",
+                                                                "type": "NODE",
+                                                                "edges": [
+                                                                    {
+                                                                        "text": "Sim",
+                                                                        "id": "2001:460",
+                                                                        "from": {
+                                                                            "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
+                                                                        },
+                                                                        "type": "EDGE",
+                                                                        "color": {
+                                                                            "r": 0.7019608020782471,
+                                                                            "g": 0.7019608020782471,
+                                                                            "b": 0.7019608020782471
+                                                                        },
+                                                                        "fromSide": "BOTTOM",
+                                                                        "toSide": "RIGHT",
+                                                                        "edgeType": "ELBOWED",
+                                                                        "directional": "UNI",
+                                                                        "to": {
+                                                                            "text": "OZE $ Endoflas $$",
+                                                                            "id": "2001:459",
+                                                                            "type": "NODE",
+                                                                            "edges": [],
+                                                                            "color": {
+                                                                                "r": 1,
+                                                                                "g": 0.7882353067398071,
+                                                                                "b": 0.26274511218070984
+                                                                            }
+                                                                        },
+                                                                        "image": "assets/anterior_comlesão_CTatingido.png"
+                                                                    },
+                                                                    {
+                                                                        "text": "Não",
+                                                                        "id": "2001:462",
+                                                                        "from": {
+                                                                            "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
+                                                                        },
+                                                                        "type": "EDGE",
+                                                                        "color": {
+                                                                            "r": 0.7019608020782471,
+                                                                            "g": 0.7019608020782471,
+                                                                            "b": 0.7019608020782471
+                                                                        },
+                                                                        "fromSide": "LEFT",
+                                                                        "toSide": "RIGHT",
+                                                                        "edgeType": "ELBOWED",
+                                                                        "directional": "UNI",
+                                                                        "to": {
+                                                                            "text": "Endoflas $$",
+                                                                            "id": "2001:461",
+                                                                            "type": "NODE",
+                                                                            "edges": [],
+                                                                            "color": {
+                                                                                "r": 1,
+                                                                                "g": 0.7882353067398071,
+                                                                                "b": 0.26274511218070984
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "color": {
+                                                                    "r": 0.8941176533699036,
+                                                                    "g": 0.800000011920929,
+                                                                    "b": 1
+                                                                }
                                                             }
                                                         },
                                                         {
@@ -667,73 +733,7 @@
                                                 "edgeType": "ELBOWED",
                                                 "directional": "UNI",
                                                 "to": {
-                                                    "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
-                                                    "id": "2001:457",
-                                                    "type": "NODE",
-                                                    "edges": [
-                                                        {
-                                                            "text": "Sim",
-                                                            "id": "2001:460",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/1/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "BOTTOM",
-                                                            "toSide": "RIGHT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "OZE $ Endoflas $$",
-                                                                "id": "2001:459",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            },
-                                                            "image": "assets/anterior_comlesão_CTatingido.png"
-                                                        },
-                                                        {
-                                                            "text": "Não",
-                                                            "id": "2001:462",
-                                                            "from": {
-                                                                "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/1/to"
-                                                            },
-                                                            "type": "EDGE",
-                                                            "color": {
-                                                                "r": 0.7019608020782471,
-                                                                "g": 0.7019608020782471,
-                                                                "b": 0.7019608020782471
-                                                            },
-                                                            "fromSide": "LEFT",
-                                                            "toSide": "RIGHT",
-                                                            "edgeType": "ELBOWED",
-                                                            "directional": "UNI",
-                                                            "to": {
-                                                                "text": "Endoflas $$",
-                                                                "id": "2001:461",
-                                                                "type": "NODE",
-                                                                "edges": [],
-                                                                "color": {
-                                                                    "r": 1,
-                                                                    "g": 0.7882353067398071,
-                                                                    "b": 0.26274511218070984
-                                                                }
-                                                            }
-                                                        }
-                                                    ],
-                                                    "color": {
-                                                        "r": 0.8941176533699036,
-                                                        "g": 0.800000011920929,
-                                                        "b": 1
-                                                    }
+                                                    "$ref": "#/edges/0/to/edges/1/to/edges/1/to/edges/0/to/edges/0/to"
                                                 }
                                             }
                                         ],
@@ -750,7 +750,8 @@
                                 "g": 0.800000011920929,
                                 "b": 1
                             }
-                        }
+                        },
+                        "image": "assets/coroafraturada_anterior.png"
                     }
                 ],
                 "color": {
@@ -840,7 +841,72 @@
                                                 "edgeType": "ELBOWED",
                                                 "directional": "UNI",
                                                 "to": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
+                                                    "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
+                                                    "id": "2001:750",
+                                                    "type": "NODE",
+                                                    "edges": [
+                                                        {
+                                                            "text": "Sim",
+                                                            "id": "2001:755",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "RIGHT",
+                                                            "toSide": "LEFT",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Vitapex $$$ Endoflas $$ Hidróxido de cálcio espessada com óxido de zinco $$ Guedes-Pinto $$",
+                                                                "id": "2001:754",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "text": "Não",
+                                                            "id": "2001:757",
+                                                            "from": {
+                                                                "$ref": "#/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
+                                                            },
+                                                            "type": "EDGE",
+                                                            "color": {
+                                                                "r": 0.7019608020782471,
+                                                                "g": 0.7019608020782471,
+                                                                "b": 0.7019608020782471
+                                                            },
+                                                            "fromSide": "BOTTOM",
+                                                            "toSide": "TOP",
+                                                            "edgeType": "ELBOWED",
+                                                            "directional": "UNI",
+                                                            "to": {
+                                                                "text": "Endoflas $$ Guedes-Pinto $$",
+                                                                "id": "2001:756",
+                                                                "type": "NODE",
+                                                                "edges": [],
+                                                                "color": {
+                                                                    "r": 1,
+                                                                    "g": 0.7882353067398071,
+                                                                    "b": 0.26274511218070984
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "color": {
+                                                        "r": 0.8941176533699036,
+                                                        "g": 0.800000011920929,
+                                                        "b": 1
+                                                    }
                                                 }
                                             },
                                             {
@@ -896,72 +962,7 @@
                                     "edgeType": "ELBOWED",
                                     "directional": "UNI",
                                     "to": {
-                                        "text": "Comprimento de trabalho atingiu todo o comprimento das raízes",
-                                        "id": "2001:750",
-                                        "type": "NODE",
-                                        "edges": [
-                                            {
-                                                "text": "Sim",
-                                                "id": "2001:755",
-                                                "from": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "RIGHT",
-                                                "toSide": "LEFT",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Vitapex $$$ Endoflas $$ Hidróxido de cálcio espessada com óxido de zinco $$ Guedes-Pinto $$",
-                                                    "id": "2001:754",
-                                                    "type": "NODE",
-                                                    "edges": [],
-                                                    "color": {
-                                                        "r": 1,
-                                                        "g": 0.7882353067398071,
-                                                        "b": 0.26274511218070984
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "text": "Não",
-                                                "id": "2001:757",
-                                                "from": {
-                                                    "$ref": "#/edges/1/to/edges/0/to/edges/1/to"
-                                                },
-                                                "type": "EDGE",
-                                                "color": {
-                                                    "r": 0.7019608020782471,
-                                                    "g": 0.7019608020782471,
-                                                    "b": 0.7019608020782471
-                                                },
-                                                "fromSide": "BOTTOM",
-                                                "toSide": "TOP",
-                                                "edgeType": "ELBOWED",
-                                                "directional": "UNI",
-                                                "to": {
-                                                    "text": "Endoflas $$ Guedes-Pinto $$",
-                                                    "id": "2001:756",
-                                                    "type": "NODE",
-                                                    "edges": [],
-                                                    "color": {
-                                                        "r": 1,
-                                                        "g": 0.7882353067398071,
-                                                        "b": 0.26274511218070984
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "color": {
-                                            "r": 0.8941176533699036,
-                                            "g": 0.800000011920929,
-                                            "b": 1
-                                        }
+                                        "$ref": "#/edges/1/to/edges/0/to/edges/0/to/edges/0/to"
                                     }
                                 }
                             ],

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor — Endoped UFMG</title>
+    <link rel="icon" type="image/png" href="assets/favicon_endoped32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <div class="toolbar-brand">
+            🦷 Endoped Editor <span>— Painel de Edição</span>
+        </div>
+        <div class="toolbar-actions">
+            <button id="btn-load" class="toolbar-btn toolbar-btn--primary">📂 Carregar</button>
+            <button id="btn-import" class="toolbar-btn">📄 Importar</button>
+            <button id="btn-export" class="toolbar-btn">💾 Exportar</button>
+            <div class="toolbar-sep"></div>
+            <button id="btn-expand" class="toolbar-btn">＋ Expandir</button>
+            <button id="btn-collapse" class="toolbar-btn">－ Colapsar</button>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar" id="stats">
+        Nenhum fluxo carregado
+    </div>
+
+    <!-- Main Content -->
+    <div class="editor-main">
+        <div class="tree-container" id="tree">
+            <div class="empty-state">
+                <h2>Nenhum fluxo carregado</h2>
+                <p>Use "Carregar" para carregar o flow.json do projeto, ou "Importar" para carregar um arquivo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Hidden file input -->
+    <input type="file" id="file-input" class="file-input-hidden" accept=".json">
+
+    <script src="editor.js"></script>
+</body>
+</html>
