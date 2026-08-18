@@ -270,6 +270,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
     margin-top: auto;
     padding-top: 2rem;
 }
@@ -290,9 +291,12 @@ body {
     height: 110px;
 }
 
+.logo-endoped-small {
+    height: 80px;
+}
+
 .logo-odontopediatria-small {
     height: 80px;
-    margin: 0 auto;
 }
 
 /* --- Internal Content (Questions & Results) --- */
