@@ -47,6 +47,7 @@
                             "edges": [
                                 {
                                     "text": "Sim",
+                                    "image": "assets/integra_esfoliacao.png",
                                     "id": "8:1037",
                                     "from": {
                                         "$ref": "#/edges/0/to/edges/0/to"
@@ -189,6 +190,7 @@
                                 },
                                 {
                                     "text": "Não",
+                                    "image": "assets/integra_prox_esfoliacao_nao.png",
                                     "id": "2001:871",
                                     "from": {
                                         "$ref": "#/edges/0/to/edges/0/to"
