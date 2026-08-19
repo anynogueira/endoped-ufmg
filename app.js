@@ -143,6 +143,11 @@ function getNodeFromObj(obj) {
     return obj;
 }
 
+function cleanEdgeText(text) {
+    // Remove the {{ }} markers used in flow.json
+    return (text || "Opção").replace(/\{\{|\}\}/g, '').trim();
+}
+
 function renderNode(nodeObj, addToHistory = true) {
     let node = getNodeFromObj(nodeObj);
     
@@ -190,15 +195,17 @@ function renderNode(nodeObj, addToHistory = true) {
         nodeImageContainer.style.display = 'none';
     }
 
-    node.edges.forEach(edge => {
-        // Resolve edge if it's a ref
-        const edgeObj = getNodeFromObj(edge);
-        
+    // Resolve refs and sort options in descending alphabetical order,
+    // so equivalent questions always present the same order (e.g. Sim before Não)
+    const edges = node.edges
+        .map(edge => getNodeFromObj(edge))
+        .filter(Boolean)
+        .map(edgeObj => ({ edgeObj, label: cleanEdgeText(edgeObj.text) }))
+        .sort((a, b) => b.label.localeCompare(a.label, 'pt-BR', { sensitivity: 'base' }));
+
+    edges.forEach(({ edgeObj, label: cleanText }) => {
         const btn = document.createElement('button');
         btn.className = 'btn btn-option';
-        
-        // Remove {{ and }} from edge text
-        const cleanText = (edgeObj.text || "Opção").replace(/\{\{|\}\}/g, '');
         
         if (edgeObj.image) {
             btn.classList.add('btn-with-image');
