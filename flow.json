@@ -113,7 +113,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento_nao.jpeg"
                                                         },
                                                         {
                                                             "text": "Sim",
@@ -141,7 +142,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento.jpeg"
                                                         }
                                                     ],
                                                     "color": {
@@ -198,7 +200,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento.jpeg"
                                                         },
                                                         {
                                                             "text": "Não",
@@ -226,7 +229,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento_nao.jpeg"
                                                         }
                                                     ],
                                                     "color": {
@@ -312,7 +316,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento_nao.jpeg"
                                                         },
                                                         {
                                                             "text": "Sim",
@@ -340,7 +345,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento.jpeg"
                                                         }
                                                     ],
                                                     "color": {
@@ -397,7 +403,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento.jpeg"
                                                         },
                                                         {
                                                             "text": "Não",
@@ -425,7 +432,8 @@
                                                                     "g": 0.7882353067398071,
                                                                     "b": 0.26274511218070984
                                                                 }
-                                                            }
+                                                            },
+                                                            "image": "assets/anterior_comprimento_nao.jpeg"
                                                         }
                                                     ],
                                                     "color": {
@@ -750,7 +758,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento_nao.jpeg"
                                             },
                                             {
                                                 "text": "Sim",
@@ -778,7 +787,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento.jpeg"
                                             }
                                         ],
                                         "color": {
@@ -835,7 +845,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento.jpeg"
                                             },
                                             {
                                                 "text": "Não",
@@ -863,7 +874,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento_nao.jpeg"
                                             }
                                         ],
                                         "color": {
@@ -949,7 +961,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento.jpeg"
                                             },
                                             {
                                                 "text": "Não",
@@ -977,7 +990,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento_nao.jpeg"
                                             }
                                         ],
                                         "color": {
@@ -1034,7 +1048,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento_nao.jpeg"
                                             },
                                             {
                                                 "text": "Sim",
@@ -1062,7 +1077,8 @@
                                                         "g": 0.7882353067398071,
                                                         "b": 0.26274511218070984
                                                     }
-                                                }
+                                                },
+                                                "image": "assets/posterior_comprimento.jpeg"
                                             }
                                         ],
                                         "color": {
