@@ -229,10 +229,66 @@ function renderNode(nodeObj, addToHistory = true) {
     showScreen('question');
 }
 
+function renderAlerts(alerts) {
+    let alertsContainer = document.getElementById('result-alerts');
+    if (!alertsContainer) {
+        alertsContainer = document.createElement('div');
+        alertsContainer.id = 'result-alerts';
+        alertsContainer.className = 'alert-container';
+        elements.resultContent.parentNode.insertBefore(alertsContainer, elements.resultContent);
+    }
+    alertsContainer.innerHTML = '';
+
+    if (!alerts || alerts.length === 0) {
+        alertsContainer.style.display = 'none';
+        return;
+    }
+
+    alerts.forEach(text => {
+        const box = document.createElement('div');
+        box.className = 'alert-box';
+        box.setAttribute('role', 'alert');
+
+        const icon = document.createElement('span');
+        icon.className = 'alert-icon';
+        icon.setAttribute('aria-hidden', 'true');
+        icon.textContent = '!';
+
+        const body = document.createElement('div');
+        body.className = 'alert-body';
+
+        const label = document.createElement('span');
+        label.className = 'alert-label';
+        label.textContent = 'Atenção';
+
+        const message = document.createElement('p');
+        message.className = 'alert-text';
+        message.textContent = text;
+
+        body.appendChild(label);
+        body.appendChild(message);
+        box.appendChild(icon);
+        box.appendChild(body);
+        alertsContainer.appendChild(box);
+    });
+
+    alertsContainer.style.display = 'flex';
+}
+
 function renderResult(node) {
     let resultText = node.text || "Sem recomendação específica.";
-    
+
     elements.resultContent.innerHTML = '';
+
+    // Extract alerts written between double brackets: [[Aviso importante]]
+    const alerts = [];
+    resultText = resultText.replace(/\[\[([\s\S]*?)\]\]/g, (_, alertText) => {
+        const clean = alertText.trim();
+        if (clean) alerts.push(clean);
+        return ' ';
+    }).trim();
+
+    renderAlerts(alerts);
     
     // Parse recommendations
     // The format seems to vary between items separated by $$ or spaces
@@ -253,6 +309,15 @@ function renderResult(node) {
         }
     }
     
+    if (items.length === 0 && alerts.length > 0) {
+        // Result was only an alert — no material list to show
+        elements.resultContent.style.display = 'none';
+        showScreen('result');
+        return;
+    }
+
+    elements.resultContent.style.display = '';
+
     if (items.length > 0) {
         const ul = document.createElement('ul');
         ul.className = 'recommendation-list';
